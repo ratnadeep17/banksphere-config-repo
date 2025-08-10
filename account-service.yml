@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: account-service
+account:
+  service:
+    message: "Welcome to Account Service!"
