@@ -4,3 +4,4 @@ server:
 spring:
   application:
     name: config-server
+message: "Hello from Config Server!"
