@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: transaction-service
+transaction:
+  service:
+    message: "Welcome to Transaction Service!"
