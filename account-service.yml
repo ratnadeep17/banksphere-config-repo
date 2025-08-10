@@ -1,7 +1,8 @@
 spring:
   application:
     name: account-service
+
 server:
   port: 8081
-message: "Hello from Account Service via Config Server"
-    
+
+message: Hello from Account Service via Config Server
