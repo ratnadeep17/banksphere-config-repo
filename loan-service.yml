@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: loan-service
+loan:
+  service:
+    message: "Welcome to Loan Service!"
