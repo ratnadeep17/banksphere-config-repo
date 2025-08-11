@@ -1,8 +1,13 @@
+server:
+  port: 8082
+
 spring:
+  application:
+    name: customer-service
   datasource:
-    url: jdbc:postgresql://localhost:5432/banksphere-customers
-    username: postgres
-    password: root
+    url: jdbc:postgresql://localhost:5432/customer_db
+    username: your_db_user
+    password: your_db_password
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -10,7 +15,7 @@ spring:
     show-sql: true
     properties:
       hibernate:
-        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
 
 eureka:
   client:
@@ -18,5 +23,9 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
     register-with-eureka: true
     fetch-registry: true
-  instance:
-    prefer-ip-address: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
