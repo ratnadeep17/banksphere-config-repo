@@ -1,12 +1,9 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/banksphere-customers
+    url: jdbc:postgresql://localhost:5432/banksphere-customers
     username: postgres
     password: root
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
+    driver-class-name: org.postgresql.Driver
 
 eureka:
   client:
